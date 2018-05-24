@@ -6,6 +6,9 @@
 belgiancurve::belgiancurve(void){
 }
 
+belgiancurve::~belgiancurve(){
+}
+
 void belgiancurve::beziercurveto(int x1, int y1, int x2, int y2, int xTo, int yTo, int color){
 	
 	int i;

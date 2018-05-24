@@ -10,4 +10,5 @@ class fontcontroller{
 		void drawR(int x, int y);
 		void drawA(int x, int y);
 		void drawY(int x, int y);
+		void drawBc(int x, int y);
 };

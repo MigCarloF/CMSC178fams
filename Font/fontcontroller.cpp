@@ -32,8 +32,6 @@ void fontcontroller::closewindow(){
 void fontcontroller::drawR(int x, int y) {
 	setcolor(RED);
 	belgiancurve bc;
-	x = 400;
-	y = 137;
 	moveto(x, y);
 	linerel(0, 87);
 	linerel(50, 0);
@@ -60,7 +58,7 @@ void fontcontroller::drawA(int x, int y) {
    	linerel(-50, -175);
    	linerel(-50, 0);
    	
-   	moveto(250, 50);
+   	moveto(x, y);
    	moverel(23, 40);
    	linerel(2, 0);
    	linerel(7, 40);
@@ -84,4 +82,13 @@ void fontcontroller::drawY(int x, int y) {
    	linerel(-50, -100);
 	setfillstyle(WIDE_DOT_FILL, YELLOW);
 	floodfill(x+1, y+1, YELLOW);
+
+
+}
+
+void fontcontroller::drawBc(int x, int y) {
+	belgiancurve b;
+	moveto(150, 267);
+	int color = WHITE;
+	b.beziercurveto(125, 45, 434, 383, 490, 240, color);
 }
