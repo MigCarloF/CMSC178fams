@@ -7,6 +7,7 @@ class fontcontroller{
 		fontcontroller(void);
 		void createwindow();
 		void closewindow();
+		void drawR(int x, int y);
 		void drawA(int x, int y);
 		void drawY(int x, int y);
 };
